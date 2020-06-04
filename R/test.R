@@ -3,8 +3,7 @@
 #' This function prints x
 #' @param x Can be anything
 #' @keywords test
-#' @export
-#' @examples 
+#' @examples
 #' test()
 test <- function (x) {
   print(x)
