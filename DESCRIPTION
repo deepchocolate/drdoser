@@ -1,0 +1,24 @@
+Package: DrDoseR
+Title: Predict and Process Longitudinal Pharmacepthical Data.
+Version: 0.0.0.9000
+Authors@R:
+    person(given = "Andreas", 
+            family = "Jangmo", 
+            email = "andreas.jangmo@ki.se",
+            role = c("aut", "cre"),
+            comment = structure("0000-0001-6928-4791", .Names = "ORCID"))
+Description: DrDoseR provides functionality to process longitudinal data.
+    It was specifically developed for data originating from the Swedish
+    Prescribed Drug Register, but can like be applied to other types
+    of data with similar structures. It can extract information on the 
+    prescribed dose based on the accompanying dosage text in the SPDR, filter
+    and aggregate this information in various ways (e.g, defining treatment
+    periods based on temporally overlapping dispensations).
+License: `use_mit_license()`, `use_gpl3_license()` or friends to
+    pick a license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Imports:
+    reticulate (>= 1.16)
