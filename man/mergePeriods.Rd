@@ -2,7 +2,7 @@
 % Please edit documentation in R/mergeperiods.R
 \name{mergePeriods}
 \alias{mergePeriods}
-\title{Merge dispensations so that the implied treatment periods are not overlapping}
+\title{Merge dispensations so that the implied treatment periods are not overlapping.}
 \usage{
 mergePeriods(data, dates, doses, cumulative = F)
 }
@@ -19,7 +19,7 @@ mergePeriods(data, dates, doses, cumulative = F)
 A data frame without overlapping periods.
 }
 \description{
-Merge dispensations so that the implied treatment periods are not overlapping
+Merge dispensations so that the implied treatment periods are not overlapping.
 }
 \details{
 Given data with a column of dates ("date") as a date variable, a column of quantity dispensed ("quantity"),
