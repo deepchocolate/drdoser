@@ -1,5 +1,5 @@
-Package: DrDoseR
-Title: Predict and Process Longitudinal Pharmacepthical Data.
+Package: lega
+Title: Longitudinal Exposure Generation and Analysis.
 Version: 0.0.0.9000
 Authors@R:
     person(given = "Andreas", 
@@ -7,7 +7,7 @@ Authors@R:
             email = "andreas.jangmo@ki.se",
             role = c("aut", "cre"),
             comment = structure("0000-0001-6928-4791", .Names = "ORCID"))
-Description: DrDoseR provides functionality to process longitudinal data.
+Description: LEGA provides functionality to process longitudinal data.
     It was specifically developed for data originating from the Swedish
     Prescribed Drug Register, but can like be applied to other types
     of data with similar structures. It can extract information on the 
