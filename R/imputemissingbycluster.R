@@ -1,8 +1,19 @@
+#' Impute missing using the nearest observation (carry-forward/backward)
+#' @param x A numeric.
+#' @return x without missing values when there is at least one non-missing value.
+#' @export
+#' @examples mergePeriodsByCluster()
+#' @details This function applies mergePeriods() across clusters (e.g., individuals).
 imputeByNearest <- function (x) {
-  if (sum(is.na(x)) == length(x)) return(x)
+  n <- length(x)
+  if (sum(is.na(x)) == n | n == 1) return(x)
+  # Run until no missing observations exist
   while (sum(is.na(x)) > 0) {
-    for (i in 2:length(x)) {
+    for (i in 2:n) {
+      # Carry forward
       if (is.na(x[i]) & !is.na(x[i-1])) x[i] <- x[i-1]
+      # Carry backward
+      else if (!is.na(x[i]) & is.na(x[i-1])) x[i-1] <- x[i]
     }
   }
 }

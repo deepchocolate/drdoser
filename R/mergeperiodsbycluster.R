@@ -3,13 +3,13 @@
 #' @param lengths A vector of treatment lengths.
 #' @param data A data frame.
 #' @param cumilative Indicate swhether the days in overlapping treatment periods should accumulate.
-#' @param ... Names of clustering variables.
+#' @param ... Names of clustering variables in data.
 #' @return A data frame without overlapping periods with one column per cluster.
 #' @export
 #' @examples mergePeriodsByCluster()
 #' @details This function applies mergePeriods() across clusters (e.g., individuals).
 
-mergePeriodsByCluster <- function(times, lengths, data,cumulative=F, ...) {
+mergePeriodsByCluster <- function(times, lengths, data, cumulative=F, ...) {
   clusters <- substitute(...)
   dta <- by(data, INDICES=list(eval(substitute(...),data)),
             FUN=function (dta, times, lengths, cumulative, clusters) {
