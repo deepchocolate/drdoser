@@ -3,7 +3,7 @@
 #' @param ... column=value pairs, or column=column,
 #' @return A data frame.
 #' @export
-#' @example replaceInData(data.frame(a=1:5, b=6:10), a=b, b=1)
+#' @examples replaceInData(data.frame(a=1:5, b=6:10), a=b, b=1)
 #' @details This function replaces provided values in the columns of data.
 #' For column=value, the column is assigned value while if column=otherColumn
 #' the values in otherColumn replaces values in column. This function can be useful
